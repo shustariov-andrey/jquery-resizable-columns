@@ -186,8 +186,6 @@ export default class ResizableColumns {
 	@param event {Object} Event object associated with the interaction
 	**/
 	onPointerDown(event) {
-		// Only applies to left-click dragging
-		if(event.which !== 1) { return; }
 
 		// If a previous operation is defined, we missed the last mouseup.
 		// Probably gobbled up by user mousing out the window then releasing.
